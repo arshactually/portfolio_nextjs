@@ -48,7 +48,7 @@ export default function Projects({}: Props) {
                                 
                                 >Lorem Ipsum is simply dummy text of the 
                                     printing and typesetting industry. Lorem Ipsum has been t
-                                    he industry's standard dummy text ever since the 1500s, when an unknown printer 
+                                    he industryss standard dummy text ever since the 1500s, when an unknown printer 
                                     took a galley of type and scrambled it to make a type specimen book. It has survived not only fiv
                                     e centuries, but also the leap into electronic typesetting, remaining essentially unch
                                     anged. It was popularised in the 1960s wit h the release of Letraset shee ts containing Lorem I
