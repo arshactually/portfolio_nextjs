@@ -11,70 +11,57 @@ import Link from 'next/link'
 
 export default function Home() {
   return (
-    <main className=' bg-[rgb(36,36,36)] text-white h-screen 
-    snap-y snap-mandatory 
-    overflow-y-scroll overflow-x-hidden z-0 scrollbar-track-gray-400
-     scrollbar-thumb-[#F7AB0A]/80'>
+    <main className='bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 scrollbar-track-gray-400 scrollbar-thumb-[#F7AB0A]/80'>
       <Head>
-        <title>Arshnoor's Portfolio</title>
+        <title>Arshnoor&apos;s Portfolio</title> {/* Fix the unescaped entity */}
       </Head>
 
-      {/**Header */}
+      {/* Header */}
       <Header />
 
-     
-
-      {/**Hero */}
-      <section id='hero' className='snap-center '>
+      {/* Hero */}
+      <section id='hero' className='snap-center'>
         <Hero />
-
       </section>
 
-      {/**About */}
-
+      {/* About */}
       <section id='about' className='snap-start'>
         <About />
       </section>
 
-      {/**Experience */}
-
+      {/* Experience */}
       <section id='experience' className='snap-center'>
-
         <WorkExperience />
       </section>
 
-
-      {/**Skills */}
-
+      {/* Skills */}
       <section id='skills' className='snap-start'>
         <Skills />
-
       </section>
 
-      {/**Projects */}
+      {/* Projects */}
+      <section id='projects' className='snap-start'>
+        <Projects />
+      </section>
 
-      <section id='projects' className='snap-start'></section>
-      <Projects/>
-
-      {/**Contact me */}
+      {/* Contact me */}
       <section id='contact' className='snap-start'>
         <ContactMe />
       </section>
 
       <Link href="#hero">
-      <footer className='sticky bottom-5 w-full cursor-pointer'>
-        <div className='flex items-center justify-center'>
-          <img className='h-10 w-10 rounded-full filter grayscale hover:grayscale-0
-          cursor-pointer'
-          
-          src="https://i.pinimg.com/564x/9c/8a/6c/9c8a6cefe878eec86751d65b4d63e280.jpg" alt="" />
-        </div>
-      </footer>
-      
+        <footer className='sticky bottom-5 w-full cursor-pointer'>
+          <div className='flex items-center justify-center'>
+            <Image
+              className='h-10 w-10 rounded-full filter grayscale hover:grayscale-0 cursor-pointer'
+              src="https://i.pinimg.com/564x/9c/8a/6c/9c8a6cefe878eec86751d65b4d63e280.jpg"
+              alt="Profile Picture" 
+              width={40}
+              height={40}
+            />
+          </div>
+        </footer>
       </Link>
-
-    
     </main>
-
   )
 }
